@@ -12,7 +12,7 @@ pluralizeListTitles = false
   # Sets the meta tag description
   description          = "Pia Lyck's amazing blog is finally here!"
   # Sets the navbarTitle that appears in the top left of the navigation bar
-  navbarTitle          = "Future Imperfect"
+  navbarTitle          = "Pia Lyck"
   # Sets where "View More Posts" links
   viewMorePostLink     = "/blog/"
 
@@ -59,11 +59,11 @@ pluralizeListTitles = false
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
 [params.intro]
-  header    = "Hugo Future Imperfect"
+  header    = "Welcome to Pia Lyck's blog and portfolio."
 
   paragraph = "Pia Lyck's amazing blog is finally here! <i class='fa fa-hand-peace-o'></i>"
 
-  about     = "Coder. Investor. Foodie. Doglover."
+  about     = "Coder. Investor. Doglover."
 
   # This appears at the top of the sidebar above params.intro.header.
   # A width of less than 100px is recommended from a design perspective.
@@ -123,7 +123,7 @@ pluralizeListTitles = false
 # and socialAppearAtBottom.
 [social]
   # Coding Communities
-  github          = "jpescador/hugo-future-imperfect"
+  github          = "PiaLyck"
   gitlab          = ""
   stackoverflow   = "" # User Number
   bitbucket       = ""
@@ -138,7 +138,7 @@ pluralizeListTitles = false
   wordpress       = ""
   medium          = ""
   # Professional/Business Oriented Communities
-  linkedin        = "example"
+  linkedin        = "plyck"
   foursquare      = ""
   xing            = ""
   slideshare      = ""
@@ -162,4 +162,4 @@ pluralizeListTitles = false
   telegram        = "example"
   vine            = ""
   # Email
-  email           = "example"
+  email           = "pialyck@gmail.com"
