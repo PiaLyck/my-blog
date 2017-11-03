@@ -21,12 +21,12 @@ defaultContentLanguage =      "en"
 # Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
 defaultContentLanguageInSubdir =  false
 disableLiveReload =           false
-# Do not build RSS files, add "RSS" to disableKinds=[] array
-# Do not build Sitemap file, add "sitemap" to disableKinds=[] array
+# Do not build RSS files: add "RSS" to disableKinds=[] array
+# Do not build Sitemap file: add "sitemap" to disableKinds=[] array
 # Enable GitInfo feature
 enableGitInfo =               false
 # Build robots.txt file
-enableRobotsTXT =             false
+enableRobotsTXT =             true
 # Do not render 404 page, add "404" to disableKinds=[] array
 # Do not inject generator meta tag on homepage
 disableHugoGeneratorInject =  false
@@ -80,9 +80,9 @@ pygmentsStyle =               "monokai"
 # true: use pygments-css or false: color-codes directly
 pygmentsUseClasses =          false
 # see "Section Menu for Lazy Bloggers", /templates/menu-templates for more info
-SectionPagesMenu = ""
+SectionPagesMenu = "main"
 # default sitemap configuration map
-sitemap = ""
+
 # filesystem path to read files relative from
 source =                      ""
 staticDir =                   "static"
@@ -91,7 +91,7 @@ stepAnalysis =                false
 # theme to use (located by default in /themes/THEMENAME/)
 themesDir =                   "themes"
 theme = "ananke"
-title = "My New Hugo Site"
+title = "Pia Lyck"
 # if true, use /filename.html instead of /filename/
 uglyURLs =                    false
 # verbose output
@@ -103,3 +103,21 @@ watch =                       true
 [taxonomies]
   category = "categories"
   tag = "tags"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  favicon = ""
+  description = "The last theme you'll ever need. Maybe."
+  facebook = ""
+  twitter = ""
+  instagram = ""
+  youtube = ""
+  github = "https://github.com/PiaLyck"
+  linkedin = "https://www.linkedin.com/in/plyck"
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-dark-green"
+  featured_image = "/images/gohugo-default-sample-hero-image.jpg"
