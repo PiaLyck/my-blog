@@ -2,6 +2,7 @@ import gulp from "gulp";
 import {spawn} from "child_process";
 import hugoBin from "hugo-bin";
 import gutil from "gulp-util";
+import imagemin from "gulp-imagemin";
 import postcss from "gulp-postcss";
 import cssImport from "postcss-import";
 import cssnext from "postcss-cssnext";
@@ -21,8 +22,10 @@ gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 
 // Build/production tasks
-gulp.task("build", ["css", "js"], (cb) => buildSite(cb, [], "production"));
-gulp.task("build-preview", ["css", "js"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+gulp.task("build", ["css", "js", "images"], (cb) => buildSite(cb, [], "production"));
+gulp.task("build-preview", ["css", "js", "images"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+
+
 
 // Compile CSS with PostCSS
 gulp.task("css", () => (
@@ -31,6 +34,17 @@ gulp.task("css", () => (
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
+
+// Minify images
+gulp.task('images', () =>
+gulp.src('src/img/*')
+    .pipe(imagemin([
+      imagemin.jpegtran({progressive: true})
+    ], {
+      verbose: true
+  }))
+    .pipe(gulp.dest("./dist/img"))
+);
 
 // Compile Javascript
 gulp.task("js", (cb) => {
