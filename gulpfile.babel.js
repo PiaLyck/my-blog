@@ -22,8 +22,8 @@ gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, hugoArgsPreview));
 
 // Build/production tasks
-gulp.task("build", ["css", "js", "images"], (cb) => buildSite(cb, [], "production"));
-gulp.task("build-preview", ["css", "js", "images"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
+gulp.task("build", ["css", "js", "img"], (cb) => buildSite(cb, [], "production"));
+gulp.task("build-preview", ["css", "js", "img"], (cb) => buildSite(cb, hugoArgsPreview, "production"));
 
 
 
@@ -36,14 +36,15 @@ gulp.task("css", () => (
 ));
 
 // Minify images
-gulp.task('images', () =>
-gulp.src('src/img/*')
+gulp.task("img", () =>
+gulp.src("./src/img/*")
     .pipe(imagemin([
       imagemin.jpegtran({progressive: true})
     ], {
       verbose: true
   }))
     .pipe(gulp.dest("./dist/img"))
+    .pipe(browserSync.stream())
 );
 
 // Compile Javascript
@@ -62,7 +63,7 @@ gulp.task("js", (cb) => {
 });
 
 // Development server with browsersync
-gulp.task("server", ["hugo", "css", "js"], () => {
+gulp.task("server", ["hugo", "css", "js", "img"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
@@ -70,6 +71,7 @@ gulp.task("server", ["hugo", "css", "js"], () => {
   });
   watch("./src/js/**/*.js", () => { gulp.start(["js"]) });
   watch("./src/css/**/*.css", () => { gulp.start(["css"]) });
+  watch("./src/img/*", () => { gulp.start(["img"]) });
   watch("./site/**/*", () => { gulp.start(["hugo"]) });
 });
 
