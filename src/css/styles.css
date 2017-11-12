@@ -1,0 +1,23 @@
+/* 
+COLORS:
+
+
+
+*/
+
+#social-share .share-btn {
+    padding: 0.1em;
+    width: 2em;
+}
+
+.share-btn {
+    border-radius: 20px;
+    box-shadow:none;
+}
+.post > .image.featured img {
+    transition: none;
+}
+
+.post > .image.featured:hover img {
+    transform: none;
+}
