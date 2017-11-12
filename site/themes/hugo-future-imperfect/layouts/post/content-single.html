@@ -17,7 +17,13 @@
   <footer>
     {{ .Render "footer-category" }}
   </footer>
-
+  {{ if .Site.Params.socialShare }}
+  <section id="social-share">
+    <ul class="icons">
+      {{ partial "share-links" . }}
+    </ul>
+  </section>
+{{ end }}
 </article>
 {{ .Render "comments" }}
 {{ .Render "prev-next" }}
