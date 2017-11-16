@@ -7,10 +7,10 @@ description = "Application for doing cool things."
 featured = "fritten.jpg"
 featuredalt = "Fritten alt"
 featuredpath = "img"
-categories = [""]
-linktitle = ""
-format = "Android"
-link = "#"
+categories = ["Portfolio", "Dogs"]
+linktitle = "Live demo"
+format = "Web"
+link = "www.google.com"
 +++
 
 ## App 1
