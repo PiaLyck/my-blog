@@ -1,7 +1,9 @@
 +++
+title = "{{ replace .TranslationBaseName "-" " " | title }}"
+date = {{ .Date }}
+draft = "true"
 author = ""
 categories = [""]
-date = ""
 description = ""
 featured = ""
 featuredalt = ""
@@ -9,7 +11,6 @@ featuredpath = ""
 link = ""
 linktitle = ""
 format = ""
-title = ""
 type = "itemized"
 
 +++

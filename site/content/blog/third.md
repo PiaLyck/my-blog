@@ -1,15 +1,15 @@
 +++
+date = "2017-11-07T09:31:29+11:00"
+draft = false
+title = "Third"
 author = ""
 categories = [""]
-date = "2017-11-07T09:31:22+11:00"
 description = ""
 featured = ""
 featuredalt = ""
 featuredpath = ""
 linktitle = ""
-title = "Blog1.md"
 type = "post"
-
 +++
 
-Hej hej blog1.md i folder blog her....
+3rd cool post, duuuude.
