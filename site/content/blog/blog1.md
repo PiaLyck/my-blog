@@ -1,6 +1,6 @@
 +++
 author = ""
-categories = [""]
+categories = ["Dogs, Women in Tech"]
 date = "2017-11-07T09:31:22+11:00"
 description = ""
 featured = ""
