@@ -59,11 +59,11 @@ pluralizeListTitles = false
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
 [params.intro]
-  header    = "Pia Lyck ved alt om hunde, tech, mad og investering. Also, her er Jeppe der gør rent"
+  header    = "Pia Lyck's blog"
 
-  paragraph = "Pia Lyck's blog paragraph"
+  paragraph = "Frontend developer into investing, feminism, DIY, food and dogs."
 
-  about     = "Om mig goes here"
+  about     = "Pia Lyck ved alt om hunde, frontend, mad og investering."
 
   # This appears at the top of the sidebar above params.intro.header.
   # A width of less than 100px is recommended from a design perspective.

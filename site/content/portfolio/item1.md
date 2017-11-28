@@ -1,16 +1,17 @@
 +++
 type = "itemized"
-author = "George Jetson"
+author = "Client: AKQA Melbourne"
 date = "2017-06-22"
-title = "Fancy App 1"
-description = "Application for doing cool things."
+title = "Say No to No"
+description = "Yes-campaign site for the 2017 Australian Equal Marriage plebiscite."
 featured = "fritten.jpg"
 featuredalt = "Fritten alt"
 featuredpath = "img"
-categories = ["Portfolio", "Dogs"]
+categories = ["Portfolio", "Frontend"]
 linktitle = "Live demo"
-format = "Web"
-link = "www.google.com"
+format = "Web, Frontend Dev"
+link = ""
 +++
 
-## App 1
+# Say No to No
+### Yes-campaign site for the 2017 Australian Equal Marriage plebiscite. Agencies, production companies, designers and people in media say no to working for the No-side. 
