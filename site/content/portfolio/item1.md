@@ -12,6 +12,3 @@ linktitle = "Live demo"
 format = "Web, Frontend Dev"
 link = ""
 +++
-
-# Say No to No
-### Yes-campaign site for the 2017 Australian Equal Marriage plebiscite. Agencies, production companies, designers and people in media say no to working for the No-side. 
