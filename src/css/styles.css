@@ -5,15 +5,51 @@ COLORS:
 
 */
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     letter-spacing: 0.15em;
+}
+
+/* Img-slider for portfolio items ("itemized") */
+
+.itemized>header {
+    margin: 0;
+}
+
+.img-slider {
+    display: block;
+}
+
+.img-container {
+    max-height: 150px;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.img-container>img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
 }
 
 
 /* Intro section */
 
-a.no-underline, a.no-underline:hover {
-   border: none;
+a.no-underline,
+a.no-underline:hover {
+    border: none;
 }
 
 #social-share .share-btn {
@@ -34,6 +70,6 @@ a.no-underline, a.no-underline:hover {
     transform: none;
 }
 
-header p{
+header p {
     letter-spacing: 0.10em;
 }

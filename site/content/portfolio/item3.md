@@ -12,5 +12,5 @@ link = ""
 linktitle = ""
 format = ""
 type = "itemized"
-
+imgslider="https://farm5.staticflickr.com/4728/27346112499_174102976f_b.jpg"
 +++
