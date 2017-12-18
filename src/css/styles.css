@@ -5,6 +5,10 @@ COLORS:
 
 */
 
+h1, h2, h3, h4, h5, h6{
+    letter-spacing: 0.15em;
+}
+
 
 /* Intro section */
 
@@ -28,4 +32,8 @@ a.no-underline, a.no-underline:hover {
 
 .post>.image.featured:hover img {
     transform: none;
+}
+
+header p{
+    letter-spacing: 0.10em;
 }
